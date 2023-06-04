@@ -14,3 +14,6 @@ phases:
       - yum -y install git
       - git clone https://github.com/sathavahanadevops/aws_codebuild_ngnix.git
       - cd aws_codebuild_ngnix
+      - rm -rf README.md buildspec.yml
+      - cd ..
+      - zip -r ngniz.zip aws_codebuild_ngnix
