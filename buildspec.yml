@@ -1,7 +1,5 @@
 version: 0.2
-
-
-  build:
-    
+phases:
+  install:
     commands:
-      - mkdir ngnix
+      - yum -y install ruby
