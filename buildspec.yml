@@ -6,3 +6,4 @@ phases:
       - yum -y install ruby
       - yum -y install wget
       - pwd
+      - whoami
