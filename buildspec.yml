@@ -18,4 +18,4 @@ phases:
       - rm -rf README.md buildspec.yml
       - cd ..
       - zip -r ngniz.zip aws_codebuild_ngnix
-      - aws s3 ls
+      - aws configure
