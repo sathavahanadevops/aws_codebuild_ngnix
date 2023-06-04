@@ -2,4 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - yum -y update
       - yum -y install ruby
+      - yum -y install wget
+      - cd /home/ec2-user
