@@ -1,1 +1,7 @@
+version: 0.2
 
+
+  build:
+    
+    commands:
+      - mkdir ngnix
