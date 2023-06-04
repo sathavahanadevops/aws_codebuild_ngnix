@@ -5,4 +5,4 @@ phases:
       - yum -y update
       - yum -y install ruby
       - yum -y install wget
-      - cd /home/ec2-user
+      - pwd
