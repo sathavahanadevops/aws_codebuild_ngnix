@@ -11,3 +11,4 @@ phases:
       - chmod +x ./install
       - ./install auto
       - yum -y install awscli
+      - yum -y install git
