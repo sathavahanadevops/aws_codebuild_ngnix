@@ -8,4 +8,9 @@ sudo chmod +x ./install
 sudo ./install auto
 sudo yum install -y python-pip
 sudo pip install awscli
-w
+=================================
+
+IAM ROLES
+AWS EC2 ROLE WITH CODEDEPLOY
+AWS CODEDEPLOY ROLE WITH S3
+
