@@ -7,6 +7,7 @@ phases:
       - yum -y install wget
       - yum -y install awscli
       - yum -y install git
+      - yum -y install zip
       - git clone https://github.com/sathavahanadevops/aws_codebuild_ngnix.git
       - cd aws_codebuild_ngnix
       - zip -r ngniz.zip aws_codebuild_ngnix
