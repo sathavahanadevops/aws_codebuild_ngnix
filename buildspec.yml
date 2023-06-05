@@ -11,10 +11,10 @@ phases:
       - aws s3 ls
   build:
     commands:
-      - git clone https://github.com/sathavahanadevops/aws_codebuild_ngnix.git
+      - aws s3 ls
    post_build:
      commands:
-       - aws s3 mv ngniz.zip s3://ngnixcodebuild
+       - aws s3 ls
   artifacts:
      files:
        - ngniz.zip
