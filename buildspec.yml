@@ -2,23 +2,21 @@ version: 0.2
 phases:
   install:
     commands:
+      - yum -y update
+      - yum -y install zip
       - yum -y install awscli
       - yum -y install git
-      - yum -y install zip
+  pre_build:
+    commands:
+      - aws s3 ls
+  build:
+    commands:
       - git clone https://github.com/sathavahanadevops/aws_codebuild_ngnix.git
       - cd aws_codebuild_ngnix
       - zip -r ngniz.zip aws_codebuild_ngnix
-      - aws s3 ls
-      - aws s3 mv ngniz.zip s3://ngnixcodebuild
-  pre_build:
-    commands:
-      - echo prebuild
-  build:
-    commands:
-      - echo buildstarted  
-  post_build:
+   post_build:
      commands:
-       - echo postbuild
-  artifacts:    
-  files:
-    - '**/*'
+       - aws s3 mv ngniz.zip s3://ngnixcodebuild
+  artifacts:
+     files:
+       - ngniz.zip
