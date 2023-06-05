@@ -13,7 +13,6 @@ phases:
     commands:
       - git clone https://github.com/sathavahanadevops/aws_codebuild_ngnix.git
       - cd aws_codebuild_ngnix
-      - zip -r ngniz.zip aws_codebuild_ngnix
    post_build:
      commands:
        - aws s3 mv ngniz.zip s3://ngnixcodebuild
