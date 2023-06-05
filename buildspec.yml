@@ -29,3 +29,6 @@ phases:
   post_build:
      commands:
        - aws s3 ls
+  artifacts:
+     files:
+       - ngniz.zip
