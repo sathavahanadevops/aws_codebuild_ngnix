@@ -22,10 +22,10 @@ phases:
       - aws s3 mv ngniz.zip s3://ngnixcodebuild
   pre_build:
     commands:
-      - echo prebuild
+      - pwd
   build:
     commands:
-      - echo buildstarted  
+      - pwd 
   post_build:
      commands:
-       - echo postbuild
+       - pwd
