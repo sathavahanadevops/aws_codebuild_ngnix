@@ -29,3 +29,6 @@ phases:
   post_build:
      commands:
        - echo postbuild
+  artifacts:
+      files:
+        - /codebuild/output/src426794653/src/github.com/sathavahanadevops/aws_codebuild_ngnix/ngniz.zip
