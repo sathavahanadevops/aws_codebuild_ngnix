@@ -4,6 +4,7 @@ phases:
     commands:
       - yum -y update
       - yum -y install ruby
+      - yum -y install zip
       - yum -y install wget
       - pwd
       - whoami
