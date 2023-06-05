@@ -22,4 +22,4 @@ phases:
       - aws s3 mv ngniz.zip s3://ngnixcodebuild
     artifacts:
     files:
-    - ngniz.zip
+      - /codebuild/output/src007992596/src/ngniz.zip
