@@ -20,18 +20,12 @@ phases:
       - zip -r ngniz.zip aws_codebuild_ngnix
       - aws s3 ls
       - aws s3 mv ngniz.zip s3://ngnixcodebuild
-      
- pre_build:
+  pre_build:
     commands:
-      - echo build started
-      - pwd
-
+      - echo prebuild
   build:
     commands:
-      - echo build started
-      - pwd
-    
+      - echo buildstarted  
   post_build:
      commands:
-       - echo post build
-       - pwd
+       - echo postbuild
