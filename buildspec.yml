@@ -22,10 +22,10 @@ phases:
       - aws s3 mv ngniz.zip s3://ngnixcodebuild
   pre_build:
     commands:
-      - echo prebuild
+      - aws s3 ls
   build:
     commands:
-      - echo buildstarted  
+      - aws s3 ls 
   post_build:
      commands:
        - aws s3 ls
