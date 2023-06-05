@@ -11,7 +11,7 @@ phases:
       - aws s3 ls
   build:
     commands:
-      - aws s3 ls
+      - echo build started
    post_build:
      commands:
        - aws s3 ls
