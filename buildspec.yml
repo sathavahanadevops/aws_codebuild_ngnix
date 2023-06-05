@@ -2,21 +2,11 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum -y update
-      - yum -y install ruby
-      - yum -y install wget
-      - pwd
-      - whoami
-      - wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
-      - chmod +x ./install
-      - ./install auto
       - yum -y install awscli
       - yum -y install git
       - yum -y install zip
       - git clone https://github.com/sathavahanadevops/aws_codebuild_ngnix.git
       - cd aws_codebuild_ngnix
-      - rm -rf README.md buildspec.yml
-      - cd ..
       - zip -r ngniz.zip aws_codebuild_ngnix
       - aws s3 ls
       - aws s3 mv ngniz.zip s3://ngnixcodebuild
