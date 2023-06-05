@@ -28,4 +28,4 @@ phases:
       - echo buildstarted  
   post_build:
      commands:
-       - echo postbuild
+       - aws s3 ls
