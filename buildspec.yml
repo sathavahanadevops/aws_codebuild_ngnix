@@ -20,3 +20,6 @@ phases:
       - zip -r ngniz.zip aws_codebuild_ngnix
       - aws s3 ls
       - aws s3 mv ngniz.zip s3://ngnixcodebuild
+    artifacts:
+    files:
+    - ngniz.zip
